@@ -1,16 +1,11 @@
+import user from 'backend/user.json';
+import  { Container } from './taskFirst/styles/App.styled';
+import { Profile } from './taskFirst/Profile';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <Profile user={user}/>
+    </Container>
   );
 };
