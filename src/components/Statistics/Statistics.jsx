@@ -10,7 +10,7 @@ export const Statistics = ({title, statistics})=>{
 
   <StatisticsList> 
     {statistics.map(({id,label,percentage}) =>
-      <StatisticCard key={id} statisticsEl={{label,percentage}}/>
+      <StatisticCard key={id} label={label} percentage={percentage}/>
       )}
   </StatisticsList>
 
@@ -18,7 +18,10 @@ export const Statistics = ({title, statistics})=>{
 }
 
 Statistics.propTypes = {
+    title: PropTypes.string,
     statistics: PropTypes.arrayOf(PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
       id: PropTypes.string.isRequired
     }).isRequired).isRequired
 }

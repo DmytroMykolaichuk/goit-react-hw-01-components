@@ -15,6 +15,7 @@ text-align: center;`
 
 export const Tr = styled.tr`
 height: 40px;
+text-transform: capitalize;
 :nth-of-type(2n + 1) {
     background-color: white;
 }
