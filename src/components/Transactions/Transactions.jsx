@@ -15,7 +15,7 @@ export const Transactions =({transactions}) =>{
 
   <Tbody>
     {transactions.map(({id,type,amount,currency}) => 
-        <OneTransaction key={id} id={id} type={type} amount={amount} currency={currency}/>
+        <OneTransaction key={id} type={type} amount={amount} currency={currency}/>
     )}
   </Tbody>
 </Table>)
