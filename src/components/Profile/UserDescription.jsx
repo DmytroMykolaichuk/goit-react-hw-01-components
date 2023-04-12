@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Descripton,DescriptonImg, NameUser,ContactUser } from "./styles/Profile/UserDescription.styled";
+import { Descripton,DescriptonImg, NameUser,ContactUser } from "./styles/UserDescription.styled";
 
 export const UserDescription =({avatar,username,tag,location})=>{
     return(

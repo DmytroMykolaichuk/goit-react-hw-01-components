@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Stats,StatsItems,Label,Quantity } from "./styles/Profile/UserStats,styled";
+import { Stats,StatsItems,Label,Quantity } from "./styles/UserStats.styled";
 
 export const UserStats=({stats:{followers, views, likes}})=>{
     return(
